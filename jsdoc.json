@@ -1,0 +1,35 @@
+{
+    "tags": {
+        "allowUnknownTags": false
+    },
+    "source": {
+        "include": "js/",
+        "includePattern": ".js$",
+        "excludePattern": "(node_modules/|docs)"
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "opts": {
+        "template": "templates/docdash",
+        "encoding": "utf8",
+        "destination": "docs/",
+        "recurse": true,
+        "verbose": true
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "docdash": {
+        "search": true,
+        "menu": {            
+            "todos project": {
+                "href":"https://lpaste.alwaysdata.net/todo",
+                "target":"_blank",
+                "class":"menu-item",
+                "id":"website_link"
+            }
+        }
+    }
+}

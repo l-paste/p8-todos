@@ -1,0 +1,27 @@
+CORRECTIONS
+
+controller.js ligne 96 -> 
+adddItem au lieu de addItem
+
+store.js ligne 84 ->
+ajout d'un timestamp à la génération d'ID pour éviter toute possibilité d'ID identique
+
+index.html ligne 16 ->
+il manquait id="toggle-all" afin d'activer la sélection de toutes les tâches
+
+index.html ligne 41 ->
+suppression du fichier base.js qui sert simplement à la barre de gauche de TodoMVC
+
+
+
+OPTIMISATIONS
+
+view.js ligne 180 -> opti des conditions, plus opti avec un switch
+
+controller.js ligne 165 -> suppression d'une boucle uniquement dédiée à la console
+ligne 122 -> simplification par regex plutôt que boucles while
+
+store.js  ligne 128 -> doublon boucles for + optimisation et reversing
+ligne 96 -> for optimisation et reversing
+
+template.js ligne 64 -> for optimisation et reversing
