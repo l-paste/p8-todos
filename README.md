@@ -45,7 +45,7 @@ npm install
 ```
 #### Optimisations
 
-- [View.js](js/view.js), ligne 240 : utilisation d'un switch à la place des *if / else if* à la chaîne.
+- [View.js](js/view.js), ligne 240 : utilisation d'un *switch* à la place des *if / else if* à la chaîne.
 ```javascript
   View.prototype.bind = function(event, handler) {
 	var self = this;
@@ -60,7 +60,7 @@ npm install
 ```javascript
 title = title.replace(/^\s+|\s+$/g, '');
 ```
-Et ligne 169 : suppression d'un forEach utilisé pour afficher des données en console.
+Et ligne 169 : suppression d'un *forEach* utilisé pour afficher des données en console.
 ```javascript
     items.forEach(function(item) {
     if (item.id === id) {
@@ -81,7 +81,7 @@ Et ligne 169 : suppression d'un forEach utilisé pour afficher des données en c
     }
 ```
 
-- Optimisation et reversing des boucles for (dans template.js et store.js) :
+- Optimisation et reversing des boucles *for* (dans template.js et store.js) :
 ```javascript
 for (var i = data.length; i--; ){
 ```
