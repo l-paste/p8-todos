@@ -10,7 +10,7 @@ npm install
 
 ## Étape 1 : Corrigez les bugs
 #### Erreurs
-- [Controller.js](./js/controller.js), ligne 95 : faute d'orthographe dans le nom d'une méthode : add**d**Item au lieu de addItem.
+- [Controller.js](/js/controller.js), ligne 95 : faute d'orthographe dans le nom d'une méthode : add**d**Item au lieu de addItem.
 ```javascript
   Controller.prototype.addItem = function(title) {
     // Première erreur : adddItem au lieu de addItem
@@ -27,7 +27,7 @@ npm install
   };
 ```
 
-- [Store.js](.js/store.js), ligne 87 : utilisation de la méthode *getTime* pour supprimer les problèmes de doublon d'ID.
+- [Store.js](js/store.js), ligne 87 : utilisation de la méthode *getTime* pour supprimer les problèmes de doublon d'ID.
 
 ```javascript
     // Generate an ID
@@ -45,7 +45,7 @@ npm install
 ```
 #### Optimisations
 
-- [View.js](.js/view.js), ligne 240 : utilisation d'un switch à la place des *if / else if* à la chaîne.
+- [View.js](js/view.js), ligne 240 : utilisation d'un switch à la place des *if / else if* à la chaîne.
 ```javascript
   View.prototype.bind = function(event, handler) {
 	var self = this;
@@ -56,7 +56,7 @@ npm install
   };
 ```
 
-- [Controller.js](.js/controller.js), ligne 125 : remplacement des deux boucles *while* par l'utilisation de regex.
+- [Controller.js](js/controller.js), ligne 125 : remplacement des deux boucles *while* par l'utilisation de regex.
 ```javascript
 title = title.replace(/^\s+|\s+$/g, '');
 ```
@@ -69,7 +69,7 @@ Et ligne 169 : suppression d'un forEach utilisé pour afficher des données en c
     });
 ```
 
-- [Store.js](.js/store.js), ligne 129 : regroupement et optimisation des deux boucles *for*.
+- [Store.js](js/store.js), ligne 129 : regroupement et optimisation des deux boucles *for*.
 ```javascript
     for (var i = todos.length; i--; ) {
       if (todos[i].id == id) {
@@ -87,7 +87,7 @@ for (var i = data.length; i--; ){
 ```
 
 ## Étape 2 : où sont les tests ?!
-Pour lancer les tests, ouvrez le fichier [SpecRunner.html](.test/SpecRunner.html) à la racine du dossier test dans votre navigateur. Les tests sont détaillés dans le fichier [ControllerSpec.js](.test/ControllerSpec.js).
+Pour lancer les tests, ouvrez le fichier [SpecRunner.html](test/SpecRunner.html) à la racine du dossier test dans votre navigateur. Les tests sont détaillés dans le fichier [ControllerSpec.js](test/ControllerSpec.js).
 
 Les tests suivants ont été complétés :
 ```
@@ -108,7 +108,7 @@ should read active entries from the model
 should toggle all todos to active if all todos are completed
 ```
 ## Étape 3 : optimisez la performance
-L'audit est récupérable à cet adresse : [Audit.pdf](.pdf/Audit.pdf)
+L'audit est récupérable à cet adresse : [Audit.pdf](pdf/Audit.pdf)
 ## Étape 4 : 
 - [Documentation technique]
-- [Guide utilisateur](https://github.com/l-paste/p8-todos/blob/master/pdf/GuideUtilisateur.pdf)
+- [Guide utilisateur](pdf/GuideUtilisateur.pdf)
