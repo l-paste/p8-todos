@@ -24,7 +24,7 @@
     "docdash": {
         "search": true,
         "menu": {            
-            "todos project": {
+            "TodoMVC project": {
                 "href":"https://lpaste.alwaysdata.net/todo",
                 "target":"_blank",
                 "class":"menu-item",

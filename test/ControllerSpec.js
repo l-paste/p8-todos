@@ -98,6 +98,8 @@ describe("controller", function() {
     });
 
     it("should show active entries", function() {
+      // TODO: write test
+
       // Une tâche par défaut
       var todo = { title: "my todo" };
       setUpModel([todo]);
@@ -110,6 +112,8 @@ describe("controller", function() {
     });
 
     it("should show completed entries", function() {
+      // TODO: write test
+
       // Tâche par défaut
       var todo = { title: "my todo" };
       setUpModel([todo]);
@@ -119,6 +123,38 @@ describe("controller", function() {
 
       // View completed entries
       expect(view.render).toHaveBeenCalledWith("showEntries", [todo]);
+    });
+
+    it("should read completed entries from the model", function() {
+      // ADDED test
+      
+      // Tâche par défaut
+      var todo = { title: "my todo" };
+      setUpModel([todo]);
+
+      // Route "completed"
+      subject.setView("#/completed");
+
+      // Todos complétées lues
+      expect(model.read).toHaveBeenCalledWith(
+        { completed: true },
+        jasmine.any(Function)
+      );
+    });
+
+    it("should read active entries from the model", function() {
+      // Tâche par défaut
+      var todo = { title: "my todo" };
+      setUpModel([todo]);
+
+      // Route "completed"
+      subject.setView("#/active");
+
+      // Todos actives lues
+      expect(model.read).toHaveBeenCalledWith(
+        { completed: false },
+        jasmine.any(Function)
+      );
     });
   });
 
@@ -239,6 +275,61 @@ describe("controller", function() {
         3,
         {
           completed: true
+        },
+        jasmine.any(Function)
+      );
+    });
+
+    it("should toggle all todos to active if all todos are completed", function() {
+      // TODO: new test
+
+      // Trois tâches complétées
+      var todoList = [
+        {
+          id: 1,
+          title: "my todo 1",
+          completed: true
+        },
+        {
+          id: 2,
+          title: "my todo 2",
+          completed: true
+        },
+        {
+          id: 3,
+          title: "my todo 3",
+          completed: true
+        }
+      ];
+      setUpModel(todoList);
+
+      // Vue par défaut
+      subject.setView("");
+
+      // Trigger du Toggle All
+      view.trigger("toggleAll", {
+        completed: false
+      });
+
+      // Vérification update des todos
+      expect(model.update).toHaveBeenCalledWith(
+        1,
+        {
+          completed: false
+        },
+        jasmine.any(Function)
+      );
+      expect(model.update).toHaveBeenCalledWith(
+        2,
+        {
+          completed: false
+        },
+        jasmine.any(Function)
+      );
+      expect(model.update).toHaveBeenCalledWith(
+        3,
+        {
+          completed: false
         },
         jasmine.any(Function)
       );

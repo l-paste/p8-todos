@@ -4,6 +4,6 @@ Vous pouvez retrouver dans cette documentation l'intégralité des fonctions tri
 
 Liens :
 * [Projet en ligne](https://lpaste.alwaysdata.net/todo)
-* Dépôt GitHub
-* Audit de performance
-* Documentation utilisateur
+* [Dépôt GitHub](https://github.com/l-paste/p8-todos)
+* [Audit de performance](https://github.com/l-paste/p8-todos/blob/master/pdf/Audit.pdf)
+* [Guide utilisateur](https://github.com/l-paste/p8-todos/blob/master/pdf/GuideUtilisateur.pdf)
