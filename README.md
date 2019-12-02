@@ -101,7 +101,7 @@ should update the view
 should add a new todo to the model
 should remove an entry from the model
 ```
-Les tests suivanst ont été ajoutés :
+Les tests suivants ont été ajoutés :
 ```
 should read completed entries from the model
 should read active entries from the model
