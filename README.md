@@ -110,5 +110,5 @@ should toggle all todos to active if all todos are completed
 ## Étape 3 : optimisez la performance
 L'audit est récupérable à cet adresse : [Audit.pdf](pdf/Audit.pdf)
 ## Étape 4 : 
-- [Documentation technique]
+- [Documentation technique](https://l-paste.github.io/p8-todos/)
 - [Guide utilisateur](pdf/GuideUtilisateur.pdf)
