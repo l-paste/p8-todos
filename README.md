@@ -112,3 +112,9 @@ should toggle all todos to active if all todos are completed
 ## Étape 4 : améliorez le projet
 - [Documentation technique](https://l-paste.github.io/p8-todos/)
 - [Guide utilisateur](pdf/GuideUtilisateur.pdf)
+
+**Compétences évaluées :**
+- Mettre en oeuvre des tests unitaires et fonctionnels dans une application web.
+- Optimiser les performances d'un projet à l'aide des DevTools.
+- Reprendre en main un projet JavaScript existant.
+
